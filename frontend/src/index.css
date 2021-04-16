@@ -31,8 +31,8 @@ body {
 
 header {
     grid-area: header;
-    background-color:  #ffffff;
-    color: #1A0C0C;
+    background-color:  #071B49;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
 }
@@ -40,10 +40,12 @@ header {
 main {
     grid-area: main;
     padding: 1rem;
+    background-color: #212F4E;
+    
 }
 footer {
     grid-area: footer;
-    background-color: black;
+    background-color: #0E0D28;
     color: #ffffff;
     bottom: 0;
     width: 100%;
@@ -65,16 +67,67 @@ a:hover {
     color: cornflowerblue;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+input,
+select, 
+textarea,
+button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #a4a4a4 solid;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+button {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+input:hover,
+select:hover, 
+textarea:hover,
+button:hover{
+    border: 0.1rem #404040 solid;
+    box-shadow:2px 2px 30px rgba(0, 0, 0, 0.1); ;
+}
+
+button.primary {
+    background-color: #E78D19;
+}
+button.block {
+    width: 100%;
+}
+
 .brand img {
-    height: 40%;
-    width: 40%;
-    margin-left: 10px;
-    margin-top: 5px;
+    max-width: 12rem;
+    width: 100%;
+    margin-left: .5rem;
+    margin-top: 1rem;
 }
 
 header a{
-    color: #1A0C0C;
+    color: #f8f8f8;
     padding: 1rem;
+}
+
+.badge {
+    background-color: #f02020;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0.07rem 0.7rem;
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
 }
 
 .row {
@@ -83,17 +136,67 @@ header a{
     justify-content: space-between;
     align-items: center;
 }
+
 .row.center {
     justify-content: center;
 }
 
+.row.top {
+    margin-top: 1rem;
+    align-items: flex-start;
+    
+}
+
+.back {
+    color:bisque;
+}
+
+.col-1 {
+    flex: 0.5 1 25rem;
+}
+
+.col-2 {
+    flex: 1 1 30rem;
+}
+
+.head{
+    color: #ffffff;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card-body.cart {
+    margin-left: 2.5rem;
+}
+
+.min-30 {
+    min-width: 30rem;
+}
+
+.item-name,
+.price{
+    color:#33C500;
+}
+
+.item-name.cart,
+.price.cart{
+    color:cornsilk;
+}
 img {
     border-radius: 0.5rem;
+}
+
+img.small{
+    max-width: 5rem;
+    width:100%;
 }
 
 img.medium {
     max-height: 24rem;
     max-width: 29rem;
+    width: 100%;
+}
+img.large {
     width: 100%;
 }
 
@@ -103,9 +206,28 @@ img.medium {
     border-radius: 0.5rem;
     margin: 1rem;
 }
+.def {
+    padding: 2.5rem;
+    color: bisque;
+}
+
+.block {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.back {
+    margin-left: 1rem;
+    border-bottom: 1px cornflowerblue solid;
+    color:cornflowerblue;
+}
 
 .card-body {
     padding: 1rem;
+}
+
+.card-body h2 {
+    color:cadetblue;
 }
 
 .card-body > *{
@@ -117,6 +239,36 @@ img.medium {
 }
 
 .rating span {
-    color: #FFD83C;
+    color: #E78D19 ;
     margin: 0.1rem;
 }
+
+.rating span:last-child {
+    color: #E78D19;
+    margin-left: 5px;
+}
+
+.success {
+    color: #33C500;
+}
+
+.danger {
+    color: #E80000;
+}
+
+.alert {
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+}
+
+.alert-info {
+    color: #2020a0;
+    background-color:#f8f8f8;
+}
+
+.alert-danger{
+    color: #a02020;
+    background-color: #ffe0e0e0; 
+}
+
