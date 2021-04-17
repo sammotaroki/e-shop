@@ -135,6 +135,8 @@ header a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .row.center {
@@ -143,8 +145,7 @@ header a{
 
 .row.top {
     margin-top: 1rem;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
 }
 
 .back {
@@ -197,6 +198,7 @@ img.medium {
     width: 100%;
 }
 img.large {
+    height: 100%;
     width: 100%;
 }
 
