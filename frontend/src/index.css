@@ -104,6 +104,7 @@ button:hover{
 
 button.primary {
     background-color: #E78D19;
+    border: none;
 }
 button.block {
     width: 100%;
@@ -135,8 +136,8 @@ header a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
 }
 
 .row.center {
@@ -212,6 +213,13 @@ img.large {
     padding: 2.5rem;
     color: bisque;
 }
+.def h1{
+    color: cadetblue;
+}
+
+.prod {
+    padding: 0 1rem ;
+}
 
 .block {
     color: #ffffff;
@@ -247,7 +255,7 @@ img.large {
 
 .rating span:last-child {
     color: #E78D19;
-    margin-left: 5px;
+    margin-left: 1rem;
 }
 
 .success {
@@ -274,3 +282,20 @@ img.large {
     background-color: #ffe0e0e0; 
 }
 
+/* Form */
+.form{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.form label,h1 {
+    margin: 1rem 0;
+    display: block;
+    color: #a4a4a4;
+}
