@@ -10,6 +10,7 @@ import { signout } from './actions/userActions';
 import RegisterScreen from './screens/RegisterScreen ';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
                     </div>
                     <div className="row">
                         <Link to="/cart">
-                            Cart
+                            <i class="fas fa-shopping-bag"></i>
                             {cartItems.length > 0 && (
                                 <span className="badge">{cartItems.length}</span>
                             )}
@@ -53,7 +54,7 @@ function App() {
                                     </ul>
                                 </div>
                             ) : (
-                                <Link to="/signin">Sign In</Link>
+                                <Link to="/signin"><i class="fas fa-user"></i></Link>
                             )
                         }
                     </div>
@@ -65,6 +66,7 @@ function App() {
                     <Route path="/register" component={RegisterScreen}></Route>
                     <Route path="/shipping" component={ShippingAddressScreen}></Route>
                     <Route path="/payment" component={PaymentMethodScreen}></Route>
+                    <Route path="/placeorder" component={PlaceOrderScreen}></Route>
                     <Route path="/" component={HomeScreen} exact ></Route>
 
                 </main>

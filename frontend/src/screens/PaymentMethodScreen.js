@@ -51,6 +51,7 @@ export default function PaymentMethodScreen(props) {
                         Continue
                     </button>
                 </div>
+
             </form>
         </div>
     )

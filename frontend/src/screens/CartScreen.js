@@ -29,8 +29,8 @@ export default function CartScreen(props) {
     };
 
     return (
-        <div className="row top">
-            <div className="col-2">
+        <div className="row">
+            <div className="col-2 cart">
                 <h1 className="head">Shopping Cart</h1>
                 {cartItems.length === 0
                     ? <MessageBox> Cart is empty. <Link className="back" to="/">Add items to cart</Link> </MessageBox>
@@ -51,7 +51,7 @@ export default function CartScreen(props) {
                                                 <Link className="item-name cart" to={`/product/${item.product}`}>{item.name}</Link>
                                             </div>
                                             <div>
-                                                <select
+                                                <select className="light"
                                                     value={item.qty}
                                                     onChange={(e) =>
                                                         dispatch(
@@ -71,8 +71,8 @@ export default function CartScreen(props) {
                                                 € {item.price}
                                             </div>
                                             <div>
-                                                <button type="button" onClick={() => removeFromCartHandler(item.product)}>
-                                                    Remove
+                                                <button type="button" className="light" onClick={() => removeFromCartHandler(item.product)}>
+                                                    <i class="fas fa-trash-alt"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ export default function CartScreen(props) {
                         <li>
                             <h2>
                                 Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items)
-                                : € {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+                                : €<strong> {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</strong>
                             </h2>
                         </li>
                         <li>

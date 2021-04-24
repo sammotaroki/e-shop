@@ -134,11 +134,21 @@ header a{
     background-color: #f02020;
     color: #ffffff;
     border-radius: 50%;
-    padding: 0.07rem 0.7rem;
-    font-size: 1.4rem;
-    margin-left: 0.3rem;
+    padding: 0.1rem 0.6rem;
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+    top: -15px;
+    right: -19px;
+    
 }
 
+.fas.fa-shopping-bag {
+    font-size: 1.8rem;
+}
+
+.fas.fa-user{
+    margin-right: 2rem;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +156,10 @@ header a{
     align-items: center;
     /* padding-left: 1rem;
     padding-right: 1rem; */
+}
+
+.row.inv {
+    align-items: flex-start;
 }
 
 .row.center {
@@ -157,18 +171,38 @@ header a{
     align-items: flex-start;    
 }
 
+.card.card-body.ordr{
+    background-color:#212F4E;
+    box-shadow:  0.5px 1px 0.2px rgb(7, 28, 48); ;
+}
+
+.card.card-body.fade{
+    background-color:#8995ad;
+}
+
+.card.card-body.fade h2{
+    color:#000000;
+}
+
+
 .back {
     color:bisque;
 }
 
 .col-1 {
-    flex: 0.5 1 25rem;
+    flex: 1 1 25rem;
 }
 
 .col-2 {
-    flex: 1 1 30rem;
+    flex: 2 1 30rem;
+}
+.col-2.cart {
+    padding: 0 1.5rem;
 }
 
+.col-1.order {
+    margin-top: 0;
+}
 .head{
     color: #ffffff;
     margin-left: 2rem;
@@ -176,8 +210,15 @@ header a{
 }
 
 .card.card-body.cart {
+    margin-top: 1rem;
     margin-left: 2.5rem;
-    background-color: #e2f4fd;
+    background-color: #6c7275;
+}
+.card.card-body.cart h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: large;
+    padding-left: 1rem;
 }
 
 .min-30 {
@@ -186,8 +227,9 @@ header a{
 
 .item-name,
 .price{
-    color:#33C500;
+    color:limegreen;
 }
+
 
 .item-name.cart,
 .price.cart{
@@ -209,6 +251,10 @@ img.medium {
     width: 100%;
 }
 img.large {
+    max-width: 50rem;
+    min-width: 50rem;
+    max-height: 50rem;
+    min-height: 50rem;
     height: 100%;
     width: 100%;
 }
@@ -228,7 +274,7 @@ img.large {
 }
 
 .prod {
-    padding: 0 1rem ;
+    padding: 0 0.3rem ;
 }
 
 .primary.block {
@@ -255,11 +301,32 @@ img.large {
 }
 
 .card.card-body.product{
-    background-color: #e2f4fd;
+    background-color: #8995ad;
 }
 
 .price {
     font-size: 2rem;
+    font-weight: 300;
+}
+
+.price-light {
+    font-size: 2.4rem;
+    color:#E78D19;
+}
+
+.price-white {
+    color: #ffffff;
+    font-size: 2rem;
+}
+.light {
+    background-color:#6c7275 ;
+    border: none;
+}
+
+.tiny{
+    font-size: smaller;
+    font-weight: 200;
+    color: #677175;
 }
 
 .rating span {
@@ -277,7 +344,7 @@ img.large {
 }
 
 .success {
-    color: #33C500;
+    color: #1c4b0a;
 }
 
 .danger {
@@ -322,6 +389,7 @@ img.large {
 .dropdown{
     display: inline-block;
     position: relative;
+    margin-right: 2rem;
 }
 
 .dropdown-content {
@@ -331,9 +399,9 @@ img.large {
     min-width: 12rem;
     padding: 1rem;
     z-index: 1;
-    background-color: #0E0D28;
+    background-color: #071B49;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border-radius: 0.5rem;
 }
 
