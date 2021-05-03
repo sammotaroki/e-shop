@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import SigninScreen from './screens/SigninScreen';
-import logo from "./assets/logo.png"
+import logo from './assets/logo.png';
 import CartScreen from './screens/CartScreen';
 import { useDispatch, useSelector } from 'react-redux';
 import { signout } from './actions/userActions';
