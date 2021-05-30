@@ -118,6 +118,10 @@ button.block {
     width: 100%;
 }
 
+button.small{
+    font-size: 1.2rem;
+}
+
 .brand img {
     max-width: 12rem;
     width: 100%;
@@ -405,12 +409,12 @@ img.large {
     position: absolute;
     display: none;
     right: 0;
-    min-width: 12rem;
+    min-width: 13rem;
     padding: 1rem;
     z-index: 1;
     background-color: #071B49;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     border-radius: 0.5rem;
 }
 
@@ -434,4 +438,26 @@ img.large {
 .checkout-steps > div.active {
     border-top-color: #E78D19;
     color: #E78D19;
+}
+
+/* Table */
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tbody tr:nth-of-type(odd){
+    background-color: #f4f4f4;
+}
+
+.table td,
+.table th {
+    text-align: left;
+    border: 0.1rem solid #e4e4e4;
+    padding: 0.5rem;
+    color:#6c7275;
+}
+
+.table button {
+    margin: 0 0.2rem;
 }
