@@ -31,15 +31,18 @@ export default function CartScreen(props) {
     return (
         <div className="row">
             <div className="col-2 cart">
-                <h1 className="head">Shopping Cart</h1>
+                <div className="head">
+                    <h1>Shopping Cart</h1>
+                </div>
+
                 {cartItems.length === 0
-                    ? <MessageBox> Cart is empty. <Link className="back" to="/">Add items to cart</Link> </MessageBox>
+                    ? <MessageBox className="prompt"> Cart is empty. <Link className="back" to="/">Add items to cart</Link> </MessageBox>
                     : (
                         <ul>
                             {
                                 cartItems.map((item) => (
                                     <li key={item.product}>
-                                        <div className="row">
+                                        <div className="row-cart">
                                             <div>
                                                 <img
                                                     src={item.image}
@@ -88,7 +91,7 @@ export default function CartScreen(props) {
                         <li>
                             <h2>
                                 Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items)
-                                : <strong className="price">€ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</strong>
+                                : <strong className="price dash">€ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</strong>
                             </h2>
                         </li>
                         <li>

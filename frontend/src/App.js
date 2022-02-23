@@ -104,7 +104,9 @@ function App() {
                     <Route path="/" component={HomeScreen} exact ></Route>
 
                 </main>
-                <footer className="row center">Copyright</footer>
+                <footer className="row center">
+                    <span className="cp">Copyright</span>
+                </footer>
             </div>
         </BrowserRouter>
     );

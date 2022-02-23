@@ -32,12 +32,12 @@ export default function SigninScreen(props) {
     return (
         <div>
             <form className="form" onSubmit={submitHandler}>
-                <div>
-                    <h1>Sign In</h1>
+                <div className="login">
+                    <h1>Log In</h1>
                 </div>
                 {loading && <LoadingBox></LoadingBox>}
                 {error && <MessageBox variant="danger">{error}</MessageBox>}
-                <div>
+                <div className="form_content">
                     <label htmlFor="email">Email</label>
                     <input
                         type="email"
@@ -47,7 +47,7 @@ export default function SigninScreen(props) {
                         onChange={(e) => setEmail(e.target.value)}
                     ></input>
                 </div>
-                <div>
+                <div className="form_content">
                     <label htmlFor="password">Password</label>
                     <input
                         type="password"
@@ -57,17 +57,17 @@ export default function SigninScreen(props) {
                         onChange={(e) => setPassword(e.target.value)}
                     ></input>
                 </div>
-                <div>
+                <div className="login_btn_container">
                     <label />
-                    <button className="primary" type="submit">
+                    <button className="primary login" type="submit">
                         Sign In
                     </button>
                 </div>
-                <div>
+                <div className="no_acc_container login">
                     <label />
                     <div>
-                        Don't have account?
-                        <Link to={`/register?redirect=${redirect}`} className="back">Create account</Link>
+                        <span className="no_acc">Don't have account?</span>
+                        <Link to={`/register?redirect=${redirect}`} className="back no_acc">Create account</Link>
                     </div>
                 </div>
             </form>
